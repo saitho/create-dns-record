@@ -21,7 +21,7 @@ inputs:
     description: "CloudFlare API token"
     required: true
   zone:
-    default: "CloudFlare zone"
+    description: "CloudFlare zone"
     required: true
 
 outputs:
