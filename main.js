@@ -9,6 +9,9 @@ const cp = require("child_process");
 const event = require(process.env.GITHUB_EVENT_PATH);
 const pr = event.pull_request ? event.pull_request.number : "?";
 
+console.log('Proxied: ' + process.env.INPUT_PROXIED)
+console.log(Boolean(process.env.INPUT_PROXIED))
+
 // https://api.cloudflare.com/#dns-records-for-a-zone-create-dns-record
 const curlResult = cp.spawnSync("curl", [
   ...["--request", "POST"],
