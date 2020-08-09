@@ -25,8 +25,8 @@ inputs:
     required: true
 
 outputs:
-  id:
-  name:
+  id: 'id'
+  name: 'name'
 
 runs:
   using: "node12"
